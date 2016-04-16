@@ -1,0 +1,17 @@
+boxen::personal::osx_apps:
+  - qlmarkdown
+  - avira-antivirus
+  - vlc
+  - handbrake
+  - google-chrome
+  - android-file-transfer
+  - synology-assistant
+  - synology-cloud-station
+  - java
+  - arduino
+  - postman
+  - packer
+  - vagrant
+  - virtualbox
+  - virtualbox-extension-pack
+  - sourcetree

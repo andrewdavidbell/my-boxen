@@ -87,4 +87,16 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # Workaround for puppet-brewcask sudo issue #22
+  sudoers { 'installer':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) SETENV:NOPASSWD: /usr/sbin/installer',
+    ],
+    type     => 'user_spec',
+  }
+
 }
+
